@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>addCheques</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+
+
+  <!-- fab placed to the top end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="presentAlertConfirm()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <!-- Readonly input -->
+  <ion-input value="ChequeId" readonly></ion-input>
+
+
+  <ion-item>
+    <ion-label position="floating">Customer ID</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating">Customer Name</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating">Receiver ID</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+  <ion-label position="floating">Receiver Name</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Amount Of Money</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+
+
+
+
+
+
+
+  <!-- fab placed to the bottom end -->
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" >
+    <ion-fab-button color="dark" href="/cheques">
+      <ion-icon name="arrow-dropleft"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
